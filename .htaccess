@@ -1,0 +1,29 @@
+# REWRITE RULES
+
+# Allow for pages (ex. http://example.com/about = index.php?page=about)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9-z\-]+)$ index.php?page=$1
+RewriteRule ^([a-zA-Z0-9-z\-]+)/$ index.php?page=$1
+</IfModule>
+
+# REDIRECT OLD PAGES
+
+# REDIRECT OLD POPULAR URLs
+
+
+# PAGESPEED
+<IfModule pagespeed_module>
+	ModPagespeed off
+	ModPagespeedEnableFilters remove_comments
+</IfModule>
+
+# Enable Compression
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/javascript text/css application/javascript
+
+
+# SEARCH ENGINES
+order allow,deny
+allow from all
+
+# FORBIDDEN USERS / IPs
