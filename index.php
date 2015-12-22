@@ -3,13 +3,13 @@
 <!-- 
 ================================================== 
 CODE:	This site uses the following code:
-		----------------------------------
-		Bootstrap 3.3.6 - HTML, CSS, and JS (http://getbootstrap.com)
-		LESS.js - JS (http://lesscss.org/)
-		Google Fonts - CSS (http://fonts.google.com)
-		FontAwesome 4.5.0 Icons - CSS (http://fontawesome.io/icons/)
-		Open Graph - HTML
-		Schema.org Markup - HTML
+	----------------------------------
+	Bootstrap 3.3.6 - HTML, CSS, and JS (http://getbootstrap.com)
+	LESS.js - JS (http://lesscss.org/)
+	Google Fonts - CSS (http://fonts.google.com)
+	FontAwesome 4.5.0 Icons - CSS (http://fontawesome.io/icons/)
+	Open Graph - HTML
+	Schema.org Markup - HTML
 ==================================================
 -->
 
@@ -158,7 +158,7 @@ CHECKLIST:
 	
 		<div class="row">
 			<div class="col-xs-12 siteFooter">
-				<p class="center-block">Copyright &copy; - <?php echo date(Y); ?></p>
+				<p class="center-block">Copyright &copy; <?php echo $siteTitle;?> - <?php echo date(Y); ?></p>
 			</div>
 		</div>
 	</div>
